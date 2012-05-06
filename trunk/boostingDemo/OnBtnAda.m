@@ -1,17 +1,17 @@
 function OnBtnAda()
 %lala
 
-global myim;
+%global myim;
 global mypath;
 global myisvalid;
 global textResult;
 
 disp(mypath);
 o1 = regexp(mypath, '\\s[0-9]+\','match');
-%o1 = regexp(o1[0], '[0-9]+', 'match');
-disp(o1);
+o1 = regexp(o1{1}, '[0-9]+', 'match');
+disp(o1{1});
 
-if (isequal(mypath,''))
+if (isequal(o1{1},'7'))
     myisvalid = 1;
     set(textResult, 'String', '识别成功');
 else
