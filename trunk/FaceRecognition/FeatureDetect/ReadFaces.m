@@ -37,7 +37,7 @@ for i=1:nPerson
         strPath=tempStrPath;
         
         if bTest == 0 % ∂¡»Î—µ¡∑ ˝æ›
-            strPath = strcat(strPath, '0'+j);
+             strPath = strcat(strPath, '0'+j);
         else
             strPath = strcat(strPath, num2str(5+j));
         end
